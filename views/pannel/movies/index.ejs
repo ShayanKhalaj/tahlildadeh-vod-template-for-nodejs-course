@@ -1,0 +1,152 @@
+
+<!--start form-->
+<div class="page-content-wrapper">
+  <div class="page-content">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mb-0">مدیریت فیلم ها</h6>
+          </div>
+          <br />
+          <div class="card-body">
+            <div class="form-group">
+              <label class="from-label" for="categoryId">انتخاب فیلم</label>
+              <select
+                class="form-control form-selct"
+                name="categoryId"
+                id="categoryId"
+              >
+                <option value="categoryId">1</option>
+                <option value="categoryId">1</option>
+                <option value="categoryId">1</option>
+              </select>
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="from-label" for="categoryName">نام فیلم</label>
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                aria-label=".form-control-lg example"
+                id="categoryName"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="from-label" for="categoryName">مناسب برای سن</label>
+              <input
+                class="form-control form-control-lg mb-3"
+                type="number"
+                max="10"
+                aria-label=".form-control-lg example"
+                id="categoryName"
+              />
+            </div>
+            <br />
+            <div class="form-group">
+              <label class="from-label" for="categoryName">امتیاز IMDB</label>
+              <input
+                class="form-control form-control-lg mb-3"
+                type="number"
+                max="10"
+                aria-label=".form-control-lg example"
+                id="categoryName"
+              />
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="from-label" for="categoryId"
+                    >انتخاب دسته بندی</label
+                  >
+                  <select
+                    class="form-control form-selct"
+                    name="categoryId"
+                    id="categoryId"
+                  >
+                    <option value="categoryId">1</option>
+                    <option value="categoryId">1</option>
+                    <option value="categoryId">1</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="from-label" for="categoryId">انتخاب ژانر</label>
+                  <select
+                    class="form-control form-selct"
+                    name="categoryId"
+                    id="categoryId"
+                  >
+                    <option value="categoryId">1</option>
+                    <option value="categoryId">1</option>
+                    <option value="categoryId">1</option>
+                  </select>
+                </div>
+              </div>
+      
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="from-label" for="categoryId"
+                  >انتخاب آهنگساز</label
+                >
+                <select
+                  class="form-control form-selct"
+                  name="categoryId"
+                  id="categoryId"
+                >
+                  <option value="categoryId">1</option>
+                  <option value="categoryId">1</option>
+                  <option value="categoryId">1</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="from-label" for="categoryId"
+                  >انتخاب نویسنده</label
+                >
+                <select
+                  class="form-control form-selct"
+                  name="categoryId"
+                  id="categoryId"
+                >
+                  <option value="categoryId">1</option>
+                  <option value="categoryId">1</option>
+                  <option value="categoryId">1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <div class="form-group">
+            <label class="from-label"> زیرنویس : </label>
+            <span class="form-group">
+              <label for="subText">دارد</label>
+              <input type="radio" id="subText" name="subText" />
+            </span>
+            <span class="form-group">
+              <label for="noSubText">ندارد</label>
+              <input type="radio" id="noSubText" name="subText" />
+            </span>
+          </div>
+            <br />
+            <div class="form-group">
+              <button id="btnSearchActor" class="btn btn-primary">
+                <i class="lni lni-search"></i>جستجو
+              </button>
+
+              <span
+                id="btnAddModalShow"
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleLargeModal"
+              >
+                <i class="lni lni-plus"></i>ثبت دسته بندی جدید
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
