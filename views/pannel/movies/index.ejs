@@ -1,0 +1,204 @@
+
+<!--start form-->
+<div id="dvPageContent">
+  <div class="page-content-wrapper">
+    <div class="page-content">
+      <div class="row justify-content-center">
+        <div class="col-md-8" id="dvSearchBox">
+          <div class="card">
+            <div class="card-header">
+              <h6 class="mb-0">مدیریت فیلم ها</h6>
+            </div>
+            <br />
+            <div class="card-body">
+              <form id="frmSearchMovie" method="get">
+                <div class="form-group">
+                  <label class="from-label" for="movieId">انتخاب فیلم</label>
+                  <select
+                    class="form-control form-selct"
+                    name="movieId"
+                    id="movieId"
+                  >
+                    <option value="">...انتخاب کنید...</option>
+                    
+                    <option value="">
+                      
+                    </option>
+                    
+                  </select>
+                </div>
+                <br />
+                <div class="form-group">
+                  <label class="from-label" for="movieName">نام فیلم</label>
+                  <input
+                    class="form-control form-control-lg mb-3"
+                    type="text"
+                    aria-label=".form-control-lg example"
+                    id="movieName"
+                    name="movieName"
+                  />
+                </div>
+                <br />
+                <div class="form-group">
+                  <label class="from-label" for="minAge">مناسب برای سن</label>
+                  <input
+                    class="form-control form-control-lg mb-3"
+                    type="number"
+                    max="10"
+                    aria-label=".form-control-lg example"
+                    id="minAge"
+                    name="minAge"
+                  />
+                </div>
+                <br />
+                <div class="form-group">
+                  <label class="from-label" for="imdb">امتیاز IMDB</label>
+                  <input
+                    class="form-control form-control-lg mb-3"
+                    type="number"
+                    max="10"
+                    aria-label=".form-control-lg example"
+                    id="imdb"
+                    name="imdb"
+                  />
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="from-label" for="categoryId"
+                        >انتخاب دسته بندی</label
+                      >
+                      <select
+                        class="form-control form-selct"
+                        name="categoryId"
+                        id="categoryId"
+                      >
+                        <option value="">...انتخاب کنید...</option>
+                        
+                        <option value="">
+                          
+                        </option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="from-label" for="genreId"
+                        >انتخاب ژانر</label
+                      >
+                      <select
+                        class="form-control form-selct"
+                        name="genreId"
+                        id="genreId"
+                      >
+                        <option value="">...انتخاب کنید...</option>
+                        
+                        <option value="">
+                          
+                        </option>
+                        
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="from-label" for="musicianId"
+                        >انتخاب آهنگساز</label
+                      >
+                      <select
+                        class="form-control form-selct"
+                        name="musicianId"
+                        id="musicianId"
+                      >
+                        <option value="">...انتخاب کنید...</option>
+                        
+                        <option value="">
+                          
+                        </option>
+                        
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="from-label" for="authorId"
+                        >انتخاب نویسنده</label
+                      >
+                      <select
+                        class="form-control form-selct"
+                        name="authorId"
+                        id="authorId"
+                      >
+                        <option value="">...انتخاب کنید...</option>
+                        
+                        <option value="">
+                          
+                        </option>
+                        
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="form-group">
+                  <label class="from-label" for="hasSubText"> زیرنویس : </label>
+                  <input
+                    type="checkbox"
+                    name="hasSubText"
+                    id="hasSubText"
+                    class="form-check"
+                  />
+                </div>
+                <br />
+                <div class="form-group">
+                  <button
+                    data-btn-search="true"
+                    data-get-url="MovieManagement/search"
+                    data-form-id="frmSearchMovie"
+                    data-grid-id="grid"
+                    class="btn btn-primary"
+                  >
+                    <i class="lni lni-search"></i>جستجو
+                  </button>
+
+                  <span
+                    data-show-create-modal="true"
+                    data-get-url="MovieManagement/createModal"
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleLargeModal"
+                  >
+                    <i class="lni lni-plus"></i>ثبت فیلم جدید
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="grid"></div>
+
+<!-- Modal -->
+<div
+  id="modal"
+  class="modal fade modal-lg"
+  data-modal="true"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ثبت و ویرایش</h5>
+      </div>
+      <div data-modal-content="true" id="dvModalContent" class="modal-body">
+        ...
+      </div>
+    </div>
+  </div>
+</div>
